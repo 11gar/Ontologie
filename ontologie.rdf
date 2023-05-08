@@ -38,6 +38,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Album">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste">
@@ -46,10 +54,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Beatmaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Beatmaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Femme -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Femme">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Ghostwriter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Ghostwriter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste"/>
     </owl:Class>
     
 
@@ -71,6 +95,14 @@
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Label -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Label"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Mixtape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Mixtape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
+    </owl:Class>
     
 
 
@@ -96,6 +128,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Single -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Single">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Style -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Style"/>
@@ -105,6 +145,14 @@
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Topliner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Topliner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste"/>
+    </owl:Class>
 </rdf:RDF>
 
 
