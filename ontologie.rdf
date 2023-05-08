@@ -7,6 +7,104 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#est -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#est"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Femme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Label -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Label"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Non_Binaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Non_Binaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Rappeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Rappeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Style"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
 </rdf:RDF>
 
 
