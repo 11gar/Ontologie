@@ -199,14 +199,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Diamant -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Diamant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques">
@@ -345,22 +337,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Or -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Or">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Platine -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Platine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
@@ -445,14 +421,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Victoires_de_la_Musique -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Victoires_de_la_Musique">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Recompense"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -479,6 +447,7 @@
         <untitled-ontology-8:contenuDans rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#BODIES_Single"/>
         <untitled-ontology-8:faitPar rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Damso"/>
         <untitled-ontology-8:rappePar rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Gazo"/>
+        <untitled-ontology-8:recompensePar rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Or"/>
     </owl:NamedIndividual>
     
 
@@ -518,6 +487,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Diamant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Diamant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Dieu_ne_ment_jamais -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Dieu_ne_ment_jamais">
@@ -543,6 +520,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
         <untitled-ontology-8:faitPar rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Angèle"/>
         <untitled-ontology-8:faitPar rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Damso"/>
+        <untitled-ontology-8:recompensePar rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Diamant"/>
     </owl:NamedIndividual>
     
 
@@ -743,10 +721,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Or -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Or">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Pineale_Prod -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Pineale_Prod">
         <rdf:type rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Beatmaker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Platine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Platine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Disques"/>
     </owl:NamedIndividual>
     
 
@@ -813,6 +807,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#VictoiresMusique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#VictoiresMusique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Recompense"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Yeux_Disent_Single -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Yeux_Disent_Single">
@@ -850,5 +852,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
