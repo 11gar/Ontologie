@@ -53,6 +53,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#cree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#cree">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#creePar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#creePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#creePar"/>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#dirigeArtistiquement -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#dirigeArtistiquement">
@@ -140,6 +154,12 @@
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#recompensePar -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#recompensePar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#remixe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#remixe"/>
     
 
 
@@ -234,6 +254,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Composantes_Titres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Composantes_Titres"/>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Directeur_Artistique -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Directeur_Artistique">
@@ -321,10 +347,18 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#ecrit"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#ecrit"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Paroles"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#ecrit"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -350,7 +384,27 @@
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Instrumentale -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Instrumentale">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Musique"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Composantes_Titres"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Mashup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Mashup">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Remix"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#remixe"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Remix"/>
     </owl:Class>
     
 
@@ -392,9 +446,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Paroles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Paroles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Composantes_Titres"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist_Communaute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist_Communaute">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#creePar"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Utilisateur"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Playlist"/>
+    </owl:Class>
     
 
 
@@ -439,6 +520,33 @@
     <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Recompense -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Recompense"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Remix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Remix">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#remixe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Titre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Sample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Sample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Composantes_Titres"/>
+    </owl:Class>
     
 
 
@@ -491,6 +599,24 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Utilisateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Utilisateur">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Artiste"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ansgar/ontologies/2023/4/untitled-ontology-8#Humain"/>
     </owl:Class>
     
 
